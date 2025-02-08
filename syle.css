@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    height: 60vh;           /* Adjust height for centering */
+}
+
+.choices {
+    display: flex;
+    gap: 2rem; /* Space between choices */
+}
+
+.choice img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+    transition: transform 0.2s ease; /* Add hover effect */
+}
+
+.choice img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.scoreboard {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* Space between user and computer scores */
+}
+
+.score {
+    text-align: center;
+}
+
+.score p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.msgcontainer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: gray;
+}
